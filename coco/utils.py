@@ -4,13 +4,13 @@ import numpy as np
 
 from PIL import Image
 
-def get_handles(num_classes=2, confounder_strength=0.8, dataset='colour', validation=True):
+def get_handles(num_classes=9, confounder_strength=0.8, dataset='colour', validation=True):
     if dataset == 'places':
         dataset_name = 'cocoplaces_vf_{}_{}'.format(num_classes, confounder_strength)
-        original_dirname = os.path.join('/home/mila/a/ahmedfar/data', dataset_name)
+        original_dirname = os.path.join(os.environ['DATA_DIR'], dataset_name)
     elif dataset == 'colour':
         dataset_name = 'cococolours_vf_{}_{}'.format(num_classes, confounder_strength)
-        original_dirname = os.path.join('/home/mila/a/ahmedfar/data', dataset_name)
+        original_dirname = os.path.join(os.environ['DATA_DIR'], dataset_name)
 
     dirname = os.path.join(os.environ['SLURM_TMPDIR'],  dataset_name)
 

@@ -13,7 +13,8 @@ python main.py -method pgi -wc 50.0 -u 5
 ```
 Use the `-v` flag when performing validation.
 
-For `coco` you'll have to create the datasets using the code in `data_makers`, which will require installing the [cocoapi](https://github.com/cocodataset/cocoapi) and downloading the [Places](http://places2.csail.mit.edu/) dataset.
+For `coco` you can create the datasets using the code in `data_makers`, which will require installing the [cocoapi](https://github.com/cocodataset/cocoapi) and downloading the [Places](http://places2.csail.mit.edu/) dataset. A sample of generated COCO datasets can be downloaded [here](https://www.dropbox.com/sh/gn99k2pllwoot87/AAAk3nxlbbqvAX8DhA7Dr9Tma?dl=0).
+
 
 For example, in the `coco` folder, you could run
 ```
